@@ -8,13 +8,11 @@
     "node": ">=20.11"
   },
   "scripts": {
-    "dev:admin": "pnpm --filter @dealbrief/admin dev",
-    "dev:report": "pnpm --filter @dealbrief/report-generator dev",
+        "dev:report": "pnpm --filter @dealbrief/report-generator dev",
     "dev:api": "pnpm --filter @dealbrief/api-main dev",
     "dev:worker": "pnpm --filter @dealbrief/workers dev",
     "build": "pnpm -r build",
-    "build:admin": "pnpm --filter @dealbrief/admin build",
-    "build:report": "pnpm --filter @dealbrief/report-generator build",
+        "build:report": "pnpm --filter @dealbrief/report-generator build",
     "build:api": "pnpm --filter @dealbrief/api-main build",
     "build:worker": "pnpm --filter @dealbrief/workers build",
     "lint": "pnpm -r lint",

@@ -1,6 +1,7 @@
 import { config } from 'dotenv';
 import Fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
+import cors from '@fastify/cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { UpstashQueue } from '../workers/core/queue.js';
@@ -14,6 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const fastify = Fastify({ logger: true });
+fastify.register(cors, { origin: process.env.CORS_ORIGIN || "*" });
 const queue = new UpstashQueue(process.env.REDIS_URL!);
 
 function log(...args: any[]) {
