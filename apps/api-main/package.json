@@ -16,7 +16,8 @@
     "fastify": "^5.1.0",
     "nanoid": "^5.0.9",
     "openai": "^4.77.3",
-    "pg": "^8.13.1"
+    "pg": "^8.13.1",
+    "@fastify/cors": "^11.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
