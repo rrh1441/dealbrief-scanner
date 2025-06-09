@@ -47,7 +47,12 @@ A comprehensive cybersecurity scanning backend that performs automated security 
 
    # API Keys
    SERPER_KEY=...
+
+   # CORS
+   CORS_ORIGIN=https://your-vercel-domain.vercel.app
    ```
+
+Set `CORS_ORIGIN` to your Vercel domain when the admin app is hosted separately.
 
 3. **Build**:
    ```bash
