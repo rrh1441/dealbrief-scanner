@@ -213,6 +213,12 @@ The scanner produces various artifact types:
 - `vuln`: Security vulnerabilities
 - `db_banner`: Database service discovery
 
+## Vercel Deployment
+
+Push commits to the `main` branch to trigger a new deployment of the admin
+frontend on Vercel. Ensure all required environment variables are configured in
+the Vercel dashboard so the build can complete successfully.
+
 ## License
 
-Private - DealBrief Scanner 
+Private - DealBrief Scanner
