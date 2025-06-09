@@ -28,9 +28,8 @@ COPY package*.json ./
 RUN npm ci --production && npm cache clean --force
 
 # Copy built application
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/api ./api
-COPY --from=builder /app/workers ./workers
+COPY --from=builder /app/apps/api-main/dist ./apps/api-main/dist
+COPY --from=builder /app/apps/workers/dist ./apps/workers/dist
 COPY --from=builder /app/public ./public
 
 # Create non-root user
@@ -41,4 +40,4 @@ USER nodejs
 
 EXPOSE 3000
 
-CMD ["node", "dist/api/server.js"]
+CMD ["node", "apps/api-main/dist/server.js"]

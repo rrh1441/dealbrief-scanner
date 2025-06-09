@@ -2,7 +2,7 @@
 
 # Update imports in admin app
 echo "Updating imports in admin app..."
-find apps/admin/src -name "*.tsx" -o -name "*.ts" | while read file; do
+find admin/src -name "*.tsx" -o -name "*.ts" | while read file; do
   # Update UI component imports
   sed -i '' "s|from '@/components/ui/\(.*\)'|from '@dealbrief/ui'|g" "$file"
   sed -i '' "s|from '../components/ui/\(.*\)'|from '@dealbrief/ui'|g" "$file"

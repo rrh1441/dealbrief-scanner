@@ -132,20 +132,15 @@ fly deploy
 ### Docker
 ```bash
 docker build -t dealbrief-scanner .
-docker run -p 8080:8080 dealbrief-scanner
+docker run -p 3000:3000 dealbrief-scanner
 ```
 
 ## Development
 
 ```bash
-# Development mode with hot reload
-npm run dev
-
-# Worker development
-npm run worker
-
-# Build TypeScript
-npm run build
+pnpm dev:api       # start API server
+pnpm dev:worker    # start worker
+pnpm dev:report    # optional report generator
 ```
 
 ## Security Tools Required
