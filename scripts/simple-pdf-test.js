@@ -9,7 +9,8 @@ const pool = new Pool({
 });
 
 const supabaseUrl = 'https://cssqcaieeixukjxqpynp.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzc3FjYWllZWl4dWtqeHFweW5wIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTcwODU5NSwiZXhwIjoyMDYxMjg0NTk1fQ.SZI80-RDucQjMMS_4NcAx16LwDOek1zi_DVVdBwjZX8';
+// Replace with your Supabase key or load from environment/secret manager
+const supabaseKey = '<YOUR_SUPABASE_KEY>';
 
 const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {

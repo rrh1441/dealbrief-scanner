@@ -1,7 +1,8 @@
 import fetch from 'node-fetch';
 
 const supabaseUrl = 'https://cssqcaieeixukjxqpynp.supabase.co';
-const serviceRoleKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzc3FjYWllZWl4dWtqeHFweW5wIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTcwODU5NSwiZXhwIjoyMDYxMjg0NTk1fQ.SZI80-RDucQjMMS_4NcAx16LwDOek1zi_DVVdBwjZX8';
+// Replace with your Supabase service role key or load from environment/secret manager
+const serviceRoleKey = '<YOUR_SUPABASE_SERVICE_ROLE_KEY>';
 
 async function createTable() {
   try {

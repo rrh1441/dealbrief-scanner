@@ -1,23 +1,25 @@
 # API Keys Setup Guide
 
+> **Note:** Real API keys should be kept in environment variables or a secret manager. The values below are placeholders.
+
 ## ✅ Configured API Keys
 
 ### 1. Shodan - $49 one-time Membership ✅
-- **API Key**: `dlv4FQhity4CjccbpyWqI3lqPfFJBuA0`
+- **API Key**: `<YOUR_SHODAN_KEY>`
 - **Environment Variable**: `SHODAN_API_KEY`
 - **Usage**: SpiderFoot module for IP/service discovery
 - **Credits**: 100 query credits/month, 100 scan credits/month
 - **Status**: ✅ Configured in Fly.io
 
 ### 2. Censys - Purchased Credits ✅
-- **API Key**: `censys_RA95DhdH_DSXQPcc5zK6xMivQeGL5jL73`
+- **API Key**: `<YOUR_CENSYS_KEY>`
 - **Environment Variable**: `CENSYS_API_KEY`
 - **Usage**: SpiderFoot module for certificate/host discovery
 - **Note**: Free tier gives 100 credits/month but not via API, so purchased credits
 - **Status**: ✅ Configured in Fly.io
 
 ### 3. HaveIBeenPwned - $4.50/month ✅
-- **API Key**: `d06cda0ce16b41e6a54d2f0176a3bc65`
+- **API Key**: `<YOUR_HIBP_KEY>`
 - **Environment Variable**: `HIBP_API_KEY`
 - **Usage**: SpiderFoot module for breach detection
 - **Rate Limit**: 1 request per 1.5 seconds
@@ -61,9 +63,9 @@ S3_SECRET_KEY=...
 SERPER_KEY=...
 
 # ✅ Configured API Keys
-SHODAN_API_KEY=dlv4FQhity4CjccbpyWqI3lqPfFJBuA0
-CENSYS_API_KEY=censys_RA95DhdH_DSXQPcc5zK6xMivQeGL5jL73
-HIBP_API_KEY=d06cda0ce16b41e6a54d2f0176a3bc65
+SHODAN_API_KEY=<YOUR_SHODAN_KEY>
+CENSYS_API_KEY=<YOUR_CENSYS_KEY>
+HIBP_API_KEY=<YOUR_HIBP_KEY>
 
 # Optional (not yet configured)
 VIRUSTOTAL_API_KEY=your_vt_key_here
