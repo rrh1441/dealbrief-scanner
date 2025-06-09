@@ -4,7 +4,7 @@ echo "🚀 Deploying DealBrief Admin to Vercel..."
 
 # Build the project first
 echo "📦 Building project..."
-npm run build
+pnpm run build
 
 # Set environment variables in Vercel
 echo "🔧 Setting environment variables..."

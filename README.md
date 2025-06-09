@@ -23,9 +23,9 @@ A comprehensive cybersecurity scanning backend that performs automated security 
 
 ## Setup
 
-1. **Install Dependencies**:
+1. **Install Dependencies** (pnpm required for workspace commands):
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. **Environment Variables**:
@@ -51,16 +51,16 @@ A comprehensive cybersecurity scanning backend that performs automated security 
 
 3. **Build**:
    ```bash
-   npm run build
+   pnpm run build
    ```
 
 4. **Run**:
    ```bash
    # API Server
-   npm start
+   pnpm start
 
    # Worker (separate process)
-   npm run worker
+   pnpm run worker
    ```
 
 ## API Endpoints
@@ -142,10 +142,10 @@ docker run -p 8080:8080 dealbrief-scanner
 npm run dev
 
 # Worker development
-npm run worker
+pnpm run worker
 
 # Build TypeScript
-npm run build
+pnpm run build
 ```
 
 ## Security Tools Required

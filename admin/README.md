@@ -15,9 +15,9 @@ A comprehensive admin dashboard for managing DealBrief security scans, viewing d
 
 ## Setup
 
-1. **Install dependencies:**
+1. **Install dependencies** (requires pnpm):
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. **Configure environment variables:**

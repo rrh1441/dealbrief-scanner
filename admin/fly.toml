@@ -5,7 +5,7 @@ primary_region = 'sea'
 [build]
 
 [processes]
-  app = "npm start"
+  app = "pnpm start"
 
 [http_service]
   internal_port = 3000
